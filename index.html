@@ -27,12 +27,18 @@
     }
     body.selected #backButton{
       display:block;
+      animation: zoomOutUp .2s;
+      animation-fill-mode: both;
     }
     body.selected #tzList{
       display: none;
+      animation: slideInRight 1s;
+      animation-fill-mode: both;
     }
     body.selected #clockWrapper{
       display: block;
+      animation: slideInRight 1s;
+      animation-fill-mode: both;
     }
 
     body #tzList{
@@ -46,6 +52,7 @@
     }
 
   }
+
   /* wide screen */
   @media (min-width:600px){
     #tzList{
@@ -101,15 +108,19 @@
   #addButton{
     bottom: 0;
     right: 0;
+    animation: zoomInUp .2s;
+    animation-fill-mode: both;
   }
   #backButton{
     top: 0;
     left: 0;
+    animation: zoomOutUp .2s;
+    animation-fill-mode: both;
   }
   #closeButton{
     top: 0;
     right: 0;
-    color: white;
+    color: black;
   }
   button.box{
     display:block;
@@ -125,6 +136,7 @@
     width: 100%;
     top: 0px;
     left: 0px;
+
   }
   .box h1{
     width: calc(100% - 105px);
@@ -159,6 +171,8 @@
     height: 300px;
     margin: auto;
     margin-top: 100px;
+    border-radius: 6px;
+
   }
   .select2-container--default .select2-selection--multiple{
     height: 200px;
